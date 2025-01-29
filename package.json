@@ -1,0 +1,17 @@
+{
+  "name": "astro-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "astro dev --port 6060",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "astro": "^5.1.10"
+  }
+}
