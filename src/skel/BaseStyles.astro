@@ -1,0 +1,57 @@
+---
+---
+<style is:global>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+        font-size: 15px;
+    }
+
+    body {
+        font-family: sans-serif;
+        font-weight: 500;
+        line-height: 1;
+        background-color: #fff;
+        color: #000;
+        transition: color 400ms ease-out, background-color 400ms ease-out;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        opacity: 1;
+        transition: opacity 400ms ease-out;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    button, input, textarea, select {
+        font: inherit; /* Ensure inputs and buttons match text styles */
+        border: none;
+        outline: none; /* Remove default focus outline */
+    }
+    
+    @media (prefers-color-scheme: dark) {
+        body {
+            background-color: #000;
+            color: #fff;
+        }
+
+        img {
+            opacity: .8;
+        }
+
+        img:hover {
+            opacity: 1;
+        }
+    }
+</style>

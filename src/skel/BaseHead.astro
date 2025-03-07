@@ -1,10 +1,7 @@
 ---
 const { title } = Astro.props;
-import GlobalStyles from "../components/GlobalStyles.astro";
-import { ClientRouter } from 'astro:transitions';
+import {ClientRouter} from "astro:transitions";
 ---
-<!doctype html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -14,8 +11,3 @@ import { ClientRouter } from 'astro:transitions';
 
     <title>{title}</title>
 </head>
-<body>
-    <slot />
-</body>
-</html>
-<GlobalStyles />
