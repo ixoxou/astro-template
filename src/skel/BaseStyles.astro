@@ -1,6 +1,10 @@
 ---
 ---
 <style is:global>
+    :root {
+        color-scheme: light dark;
+    }
+
     * {
         margin: 0;
         padding: 0;
@@ -16,8 +20,8 @@
         font-family: sans-serif;
         font-weight: 500;
         line-height: 1;
-        background-color: #fff;
-        color: #000;
+        background-color: light-dark(#fff, #000);
+        color: light-dark(#000, #fff);
         transition: color 400ms ease-out, background-color 400ms ease-out;
     }
 
@@ -41,11 +45,6 @@
     }
     
     @media (prefers-color-scheme: dark) {
-        body {
-            background-color: #000;
-            color: #fff;
-        }
-
         img {
             opacity: .8;
         }
