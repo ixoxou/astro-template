@@ -12,6 +12,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "astro": "^5.4.2"
+    "astro": "^5.4.2",
+    "css-preflight": "^1.1.1"
   }
 }
