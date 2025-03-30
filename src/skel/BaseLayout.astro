@@ -1,9 +1,8 @@
 ---
 const { title } = Astro.props;
+
 import BaseHead from "./BaseHead.astro";
-import 'css-preflight/preflight';
-import 'css-preflight/smooth-scroll';
-import 'css-preflight/enhancements';
+import BaseStyles from './BaseStyles.astro'
 ---
 <!doctype html>
 <html lang="en">
@@ -12,3 +11,4 @@ import 'css-preflight/enhancements';
 <slot />
 </body>
 </html>
+<BaseStyles />
