@@ -3,11 +3,11 @@ import { defineConfig } from "astro/config";
 import cloudflare from "@astrojs/cloudflare";
 
 export default defineConfig({
-  vite: {
+    vite: {
       server: {
           allowedHosts: ["levi.andrea.my", 'cleo.andrea.my']
       },
-  },
-
-  adapter: cloudflare()
+    },
+    adapter: cloudflare(),
+    output: 'server'
 });
