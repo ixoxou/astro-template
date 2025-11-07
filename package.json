@@ -12,6 +12,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@astrojs/cloudflare": "^12.6.10",
     "@sanity/astro": "^3.2.10",
     "@sanity/client": "^7.12.1",
     "astro": "^5.13.3",
