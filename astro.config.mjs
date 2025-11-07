@@ -1,13 +1,17 @@
 import { defineConfig } from "astro/config";
 
-import cloudflare from "@astrojs/cloudflare";
+import sanity from "@sanity/astro";
 
 export default defineConfig({
-    vite: {
+  vite: {
       server: {
           allowedHosts: ["levi.andrea.my", 'cleo.andrea.my']
       },
-    },
-    adapter: cloudflare(),
-    output: 'server'
+  },
+
+  integrations: [sanity({
+      projectId: "Milano",
+      dataset: "production",
+      useCdn: false, // for static builds
+  })]
 });

@@ -12,8 +12,15 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@astrojs/cloudflare": "^12.6.10",
+    "@sanity/astro": "^3.2.10",
+    "@sanity/client": "^7.12.1",
     "astro": "^5.13.3",
-    "css-preflight": "^1.1.1"
+    "astro-portabletext": "^0.11.3",
+    "css-preflight": "^1.1.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-is": "^19.2.0",
+    "sanity": "^4.14.1",
+    "styled-components": "^6.1.19"
   }
 }
